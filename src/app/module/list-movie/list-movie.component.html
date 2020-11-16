@@ -1,0 +1,13 @@
+<section class="main-container" *ngIf="movieList$ | async as movie">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 card-container" *ngFor="let m of movie.results">
+        <img src="assets/img/404.png" alt="Imagem inicial do filme" />
+        <h2>Titulo: {{ m.title }}</h2>
+        <p>Diretor: {{ m.director }}</p>
+        <p>lançamento: {{ formatDate(m.release_date) }}</p>
+        <button (click)="getMovieDetails(m.url)" class="btn">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+<section class="container-details" *ngIf="movieDetail$ | async as movieData">
+  <div class="center">
+    <div class="img-detail">
+      <img src="assets/img/img-detail.jpg" alt="Imagem do filme selecionado" />
+    </div>
+    <h1 class="title">Titulo: {{ movieData.title }}</h1>
+    <h2>Diretor: {{ movieData.director }}</h2>
+    <h2>Produtora: {{ movieData.producer }}</h2>
+    <h2>Lançamento: {{ movieData.release_date }}</h2>
+  </div>
+</section>
