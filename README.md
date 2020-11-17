@@ -15,7 +15,7 @@
 1. Abra o projeto em seu VScode
 1. Abra o Terminal do VScode
 1. Execute yarn install ou npm install
-1. Execute yarn start (e aguarde sua aplicação subir )
+1. Execute yarn start ou npm run start (e aguarde sua aplicação subir )
 1. Coloque na barra de busca do seu navegador http://localhost:4200/
    Tudo pronto!
 

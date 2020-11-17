@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MovieService } from 'src/app/service/movie.service';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ListMovieComponent } from './list-movie.component';
@@ -14,8 +13,6 @@ describe('ListMovieComponent', () => {
       declarations: [ListMovieComponent],
       providers: [MovieService],
       imports: [CommonModule],
-
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   });
 
